@@ -24,5 +24,5 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Calificar con pytest
         run: |
-          pytest --doctest-modules tests/test_doble_factorial.py Student/${{ github.event.head_commit.author.name }}_*/
+          pytest --doctest-modules test/test_01.py Student/${{ github.event.head_commit.author.name }}_*/
 
