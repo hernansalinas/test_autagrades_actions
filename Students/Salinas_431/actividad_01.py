@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 ## Definir la función que calcula el doble factorial
 def doble_factorial(n):
   # Verificar que n sea un número entero positivo
