@@ -20,5 +20,5 @@ numero = int(input("Ingrese un número entero positivo: "))
 # Llamar a la función con el argumento numero
 doble_factorial = doble_factorial(numero)
 
-# Mostrar el valor del doble factorial al usuario
+## Mostrar el valor del doble factorial al usuario
 print(f"El doble factorial de {numero} es {doble_factorial}")
