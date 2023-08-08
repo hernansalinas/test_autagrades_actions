@@ -4,8 +4,8 @@
 name: Python application
 
 on:
-  push:
-    branches: [ "main" ]
+  #push:
+  #  branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -36,4 +36,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest --doctest-modules test/test_01.py Student/${{ github.event.head_commit.author.name }}_*/actividad_01.py
+        pytest --doctest-modules test/test_01.py Student/${{ github.event.pull_request.user.login }}_*/actividad_01.py
+    #pytest --doctest-modules test/test_01.py Student/${{ github.event.head_commit.author.name }}_*/actividad_01.py
