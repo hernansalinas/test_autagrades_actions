@@ -39,12 +39,12 @@ jobs:
     - name: Lint with pylint
       run: |
         # Run pylint on the source directory and save the report as a text file
-        pylint src.* --exit-zero > pylint_report.txt
+        pylint src/ --exit-zero > pylint_report.txt
         # Upload the report as an artifact
         
     - name: Upload pylint report as artifact
     
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2.3.1
       with:
         name: pylint-report
         path: pylint_report.txt
