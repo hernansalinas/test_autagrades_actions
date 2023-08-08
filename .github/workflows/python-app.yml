@@ -41,6 +41,9 @@ jobs:
         # Run pylint on the source directory and save the report as a text file
         pylint ./src --exit-zero > pylint_report.txt
         # Upload the report as an artifact
+        
+    - name: Upload pylint report as artifact
+    
         uses: actions/upload-artifact@v2
         with:
           name: pylint-report
