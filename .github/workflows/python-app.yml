@@ -44,10 +44,10 @@ jobs:
         
     - name: Upload pylint report as artifact
     
-        uses: actions/upload-artifact@v2
-        with:
-          name: pylint-report
-          path: pylint_report.txt
+      uses: actions/upload-artifact@v2
+      with:
+        name: pylint-report
+        path: pylint_report.txt
 
     - name: Test with pytest
       run: |
