@@ -1,4 +1,4 @@
-# Definir la función que calcula el doble factorial
+## Definir la función que calcula el doble factorial
 def doble_factorial(n):
   # Verificar que n sea un número entero positivo
   if not isinstance(n, int) or n < 0:
